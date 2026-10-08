@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Document Metadata -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyPortfolio - Personal Portfolio & Resume Website</title>
+  <meta name="description" content="Tutorial 1 for Unit 1: HTML & CSS - A simple, professional, responsive personal portfolio and resume demonstrating core semantic HTML5 and CSS3 concepts." />
+  <meta property="og:title" content="MyPortfolio - Personal Portfolio & Resume Website" />
+  <meta property="og:description" content="Tutorial 1 for Unit 1: HTML & CSS - A simple, professional, responsive personal portfolio and resume demonstrating core semantic HTML5 and CSS3 concepts." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- External Stylesheet (Unit 1 CSS Demonstration) -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER & NAVIGATION BAR (Semantic <header> & <nav>, Sticky Positioning)
+       ====================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="MyPortfolio Home">
+        <span>MyPortfolio</span>
+        <span class="brand-tag">Unit 1 Lab</span>
+      </a>
+
+      <!-- Mobile Navigation Hamburger Button -->
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+        ☰
+      </button>
+
+      <!-- Main Navigation Menu (Internal Hyperlinks) -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#viva" class="nav-btn-viva">🎓 Viva Guide</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MAIN CONTENT (<main> Semantic Container)
+       ====================================================================== -->
+  <main>
+
+    <!-- SECTION 1: HOME / HERO (Headings, Animation, Box Model, Canvas) -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Text Block -->
+          <div class="hero-content">
+            <span class="hero-badge">Cloud Full Stack Web Development • Tutorial 1</span>
+            <h1 class="hero-title">
+              Hello, I'm <span class="hero-highlight">Alex Sharma</span>
+            </h1>
+            <h2 style="font-size: 1.45rem; color: #475569; font-weight: 600; margin-bottom: 1rem;">
+              Aspiring Full Stack Engineer &amp; Computer Science Student
+            </h2>
+            <p class="hero-lead">
+              Welcome to my portfolio! Built exclusively using semantic HTML5 and clean CSS3 to demonstrate core foundational web engineering concepts—including box model architecture, responsive layouts, CSS positioning, and lab viva topics.
+            </p>
+
+            <!-- Action Buttons (Transitions & Internal Links) -->
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-outline">Contact Me</a>
+              <a href="#resume" class="btn btn-outline">View Resume</a>
+            </div>
+
+            <!-- HTML5 Canvas Demonstration (Unit 1 Topic) -->
+            <div class="canvas-demo-box">
+              <canvas id="decorative-canvas" width="130" height="42" aria-label="Decorative animated canvas"></canvas>
+              <div class="canvas-demo-info">
+                <span class="canvas-demo-label">HTML5 &lt;canvas&gt;</span>
+                <span class="canvas-demo-desc">Interactive 2D animated node graphic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Image Block (Images, Borders, Relative/Absolute Positioning) -->
+          <div class="hero-image-wrap">
+            <div class="hero-img-container">
+              <img 
+                src="./images/profile.svg" 
+                alt="Profile portrait of Alex Sharma" 
+                class="hero-profile-img"
+                width="320" 
+                height="320"
+              />
+              <!-- Floating Positioned Badge (CSS absolute positioning) -->
+              <div class="floating-status-badge">
+                <span class="status-dot"></span>
+                <span class="status-text">Available for Internships</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT ME (Headings, Paragraphs, Blockquote, Multimedia) -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <header class="section-title-wrap">
+          <span class="section-kicker">Introduction</span>
+          <h2>About Me</h2>
+          <p class="section-subtitle">A glimpse into my background, academic journey, and career goals.</p>
+        </header>
+
+        <div class="about-grid">
+          <!-- Text and Article Block -->
+          <article class="about-text-card">
+            <h3>Personal Background &amp; Motivation</h3>
+            <p>
+              I am a third-year Computer Science and Engineering student with a strong passion for web development and cloud technologies. I enjoy understanding how the web works from the ground up, starting with semantic HTML document architecture, CSS layout mechanisms, and modern responsive standards.
+            </p>
+            <p>
+              My goal is to build accessible, lightning-fast, and user-centric web applications. Currently, I am mastering Unit 1 of Full Stack Web Development, focusing on pure HTML5 tags, CSS3 styling, and clean document outlines.
+            </p>
+
+            <!-- Text Block: Blockquote (Unit 1 Text Block demonstration) -->
+            <blockquote>
+              "Clean markup and structured CSS are the true foundation of every great web application."
+            </blockquote>
+
+            <h3 style="margin-top: 1.5rem;">Career Objective</h3>
+            <p>
+              To secure a software engineering internship where I can apply my problem-solving skills, collaborate with forward-thinking development teams, and expand my technical proficiency across cloud and full stack paradigms.
+            </p>
+          </article>
+
+          <!-- Highlights & Multimedia Demonstrations -->
+          <aside class="about-highlights">
+            <div class="info-box">
+              <h4>🎓 Academic Standing</h4>
+              <p>Bachelor of Technology in Computer Science &amp; Engineering</p>
+              <p style="margin-bottom: 0; color: #64748b; font-size: 0.9rem;">
+                SRM Institute of Science and Technology • 2023 – 2027
+              </p>
+            </div>
+
+            <div class="info-box">
+              <h4>🎯 Core Interests</h4>
+              <p style="margin-bottom: 0;">
+                Front-End Architecture, Cloud Infrastructure, Responsive Design, and Systems Programming.
+              </p>
+            </div>
+
+            <!-- Multimedia Demonstration: HTML5 <audio> (Unit 1 Topic 11) -->
+            <div class="multimedia-card">
+              <h4>🔊 Voice Introduction (Multimedia Demo)</h4>
+              <p>Demonstrating the HTML5 <code>&lt;audio controls&gt;</code> element with sample audio greeting.</p>
+              <audio controls preload="none">
+                <!-- Fallback sound source -->
+                <source src="data:audio/wav;base64,UklGRjIAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YRAAAACAgICAgICAgICAgICAgICA" type="audio/wav" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SKILLS (Lists: Ordered & Unordered, CSS Grid Cards) -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <header class="section-title-wrap">
+          <span class="section-kicker">Technical Competence</span>
+          <h2>Technical Skills</h2>
+          <p class="section-subtitle">
+            Demonstrating HTML lists (both ordered and unordered) and styled CSS grid cards.
+          </p>
+        </header>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: Programming Languages (Unordered List <ul>) -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <span class="skill-card-icon">&lt;&gt;</span>
+              <h3>Programming Languages</h3>
+            </div>
+            <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 1rem;">
+              Demonstrating HTML <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> elements:
+            </p>
+            <ul class="skills-unordered-list">
+              <li><strong>C</strong> — Procedural programming and memory management</li>
+              <li><strong>C++</strong> — Object-oriented principles and STL algorithms</li>
+              <li><strong>Java</strong> — Robust application development and OOP design</li>
+              <li><strong>Python</strong> — Scripting, automation, and data structures</li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 2: Web & UI Technologies (Unordered List <ul>) -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <span class="skill-card-icon">🎨</span>
+              <h3>Web Fundamentals</h3>
+            </div>
+            <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 1rem;">
+              Core client-side web technologies (Unit 1 focus):
+            </p>
+            <ul class="skills-unordered-list">
+              <li><strong>HTML5</strong> — Semantic tags, tables, forms, and multimedia</li>
+              <li><strong>CSS3</strong> — Flexbox, Grid, Box Model, and Animations</li>
+              <li><strong>JavaScript</strong> — Vanilla DOM manipulation and Canvas API</li>
+              <li><strong>Responsive Web</strong> — Media queries and fluid viewports</li>
+            </ul>
+          </div>
+
+          <!-- Skill Card 3: Learning Priority Roadmap (Ordered List <ol>) -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <span class="skill-card-icon">📈</span>
+              <h3>Learning Roadmap</h3>
+            </div>
+            <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 1rem;">
+              Demonstrating HTML <code>&lt;ol&gt;</code> ordered sequence:
+            </p>
+            <ol class="skills-ordered-list">
+              <li>
+                <strong>Unit 1: HTML5 &amp; CSS3</strong>
+                <span class="skill-level-note">Mastered semantic tags, styling, layout</span>
+              </li>
+              <li>
+                <strong>Client-Side Interactivity</strong>
+                <span class="skill-level-note">Vanilla JavaScript DOM &amp; Canvas</span>
+              </li>
+              <li>
+                <strong>Cloud &amp; Server Concepts</strong>
+                <span class="skill-level-note">Upcoming units in Cloud Full Stack</span>
+              </li>
+              <li>
+                <strong>Production Deployment</strong>
+                <span class="skill-level-note">Static hosting, CI/CD, and monitoring</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: EDUCATION (HTML Table & CSS Styling) -->
+    <section id="education" class="education-section">
+      <div class="container">
+        <header class="section-title-wrap">
+          <span class="section-kicker">Academic Background</span>
+          <h2>Education</h2>
+          <p class="section-subtitle">
+            Demonstrating structured HTML tables, headers, zebra striping, and border styling.
+          </p>
+        </header>
+
+        <div class="table-responsive-wrapper">
+          <table class="education-table">
+            <caption>Academic Qualification Summary</caption>
+            <thead>
+              <tr>
+                <th scope="col">Degree / Course</th>
+                <th scope="col">Institution</th>
+                <th scope="col">Year</th>
+                <th scope="col">Percentage / CGPA</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>B.Tech - Computer Science &amp; Engineering</strong></td>
+                <td>SRM Institute of Science and Technology, Chennai</td>
+                <td>2023 – 2027</td>
+                <td><span class="score-badge">9.12 CGPA</span></td>
+              </tr>
+              <tr>
+                <td><strong>Higher Secondary Certificate (Class XII)</strong></td>
+                <td>Delhi Public School, R.K. Puram</td>
+                <td>2022 – 2023</td>
+                <td><span class="score-badge">94.8%</span></td>
+              </tr>
+              <tr>
+                <td><strong>Secondary School Examination (Class X)</strong></td>
+                <td>St. Xavier's Senior Secondary School</td>
+                <td>2020 – 2021</td>
+                <td><span class="score-badge">96.2%</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: PROJECTS (CSS Grid, Project Cards, Transformations & Hover Transitions) -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <header class="section-title-wrap">
+          <span class="section-kicker">Practical Work</span>
+          <h2>Featured Projects</h2>
+          <p class="section-subtitle">
+            Sample lab projects created using Unit 1 HTML/CSS concepts. Notice hover transformations and card styling.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+          
+          <!-- Project Card 1 -->
+          <article class="project-card">
+            <div class="project-img-wrapper">
+              <img 
+                src="./images/project-1.svg" 
+                alt="MyPortfolio Project Screenshot Mockup" 
+                class="project-img" 
+                width="600" 
+                height="360"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">MyPortfolio Web App</h3>
+              <p class="project-desc">
+                A personal portfolio and interactive resume website built to demonstrate semantic HTML tags, CSS box model, and layout techniques.
+              </p>
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span class="tech-dot">•</span>
+                <span>CSS3 Flexbox</span>
+                <span class="tech-dot">•</span>
+                <span>Box Model</span>
+              </div>
+              <div class="project-links">
+                <a href="#home" class="btn btn-primary btn-sm">Internal View</a>
+                <a href="#viva" class="btn btn-outline btn-sm">Viva Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <article class="project-card">
+            <div class="project-img-wrapper">
+              <img 
+                src="./images/project-2.svg" 
+                alt="Student Attendance and Grade Tracker Mockup" 
+                class="project-img" 
+                width="600" 
+                height="360"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Student Grade Portal</h3>
+              <p class="project-desc">
+                A clean academic dashboard demonstrating complex HTML tables, zebra striping, responsive table scrolling, and status badges.
+              </p>
+              <div class="project-tech">
+                <span>HTML Tables</span>
+                <span class="tech-dot">•</span>
+                <span>CSS Grid</span>
+                <span class="tech-dot">•</span>
+                <span>Zebra Striping</span>
+              </div>
+              <div class="project-links">
+                <a href="#education" class="btn btn-primary btn-sm">See Table</a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">External Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3 -->
+          <article class="project-card">
+            <div class="project-img-wrapper">
+              <img 
+                src="./images/project-3.svg" 
+                alt="Weather and Climate Dashboard Mockup" 
+                class="project-img" 
+                width="600" 
+                height="360"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Weather Dashboard UI</h3>
+              <p class="project-desc">
+                A clean card-based weather display illustrating CSS positioning (relative/absolute), linear gradients, and responsive layouts.
+              </p>
+              <div class="project-tech">
+                <span>CSS Gradients</span>
+                <span class="tech-dot">•</span>
+                <span>Flexbox</span>
+                <span class="tech-dot">•</span>
+                <span>Responsive Design</span>
+              </div>
+              <div class="project-links">
+                <a href="#skills" class="btn btn-primary btn-sm">View Skills</a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">External Link</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 4 -->
+          <article class="project-card">
+            <div class="project-img-wrapper">
+              <img 
+                src="./images/project-4.svg" 
+                alt="Developer Tech Blog and Code Snippets Mockup" 
+                class="project-img" 
+                width="600" 
+                height="360"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">DevNotes Tech Blog</h3>
+              <p class="project-desc">
+                A multi-article technical blog structure demonstrating semantic HTML tags, code blocks, quote formatting, and responsive typography.
+              </p>
+              <div class="project-tech">
+                <span>Semantic &lt;article&gt;</span>
+                <span class="tech-dot">•</span>
+                <span>Typography</span>
+                <span class="tech-dot">•</span>
+                <span>CSS Borders</span>
+              </div>
+              <div class="project-links">
+                <a href="#about" class="btn btn-primary btn-sm">Read Notes</a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">External Link</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: RESUME (Document Layout, Print Support, Download Button) -->
+    <section id="resume" class="resume-section">
+      <div class="container">
+        <header class="section-title-wrap">
+          <span class="section-kicker">Curriculum Vitae</span>
+          <h2>Resume</h2>
+          <p class="section-subtitle">
+            A comprehensive, clean resume structured with semantic sections. Click below to print or download.
+          </p>
+        </header>
+
+        <!-- Printable Resume Paper -->
+        <div class="resume-paper">
+          <!-- Resume Header Block -->
+          <div class="resume-header">
+            <div>
+              <h3 class="resume-candidate-name">Alex Sharma</h3>
+              <p class="resume-candidate-role">Full Stack Web Development Student</p>
+              <div class="resume-contact-inline">
+                <span>📍 Chennai, India</span>
+                <span>✉️ alex.sharma@example.edu</span>
+                <span>📞 +91 98765 43210</span>
+                <span>🌐 linkedin.com/in/alex-sharma</span>
+              </div>
+            </div>
+            <div>
+              <button id="download-resume-btn" class="btn btn-primary">
+                📄 Download / Print Resume
+              </button>
+            </div>
+          </div>
+
+          <!-- Career Objective -->
+          <div class="resume-section-block">
+            <h4 class="resume-section-heading">1. Career Objective</h4>
+            <p>
+              Motivated Computer Science undergraduate aiming to leverage deep foundations in semantic HTML5 markup, responsive CSS3 styling, and software engineering principles in a challenging development internship role.
+            </p>
+          </div>
+
+          <!-- Education -->
+          <div class="resume-section-block">
+            <h4 class="resume-section-heading">2. Education</h4>
+            <div class="resume-item">
+              <div class="resume-item-top">
+                <span class="resume-item-title">B.Tech in Computer Science and Engineering</span>
+                <span class="resume-item-year">2023 – 2027</span>
+              </div>
+              <span class="resume-item-subtitle">SRM Institute of Science and Technology • CGPA: 9.12 / 10.0</span>
+            </div>
+            <div class="resume-item">
+              <div class="resume-item-top">
+                <span class="resume-item-title">Senior Secondary School Certificate (Class XII)</span>
+                <span class="resume-item-year">2022 – 2023</span>
+              </div>
+              <span class="resume-item-subtitle">Delhi Public School • Percentage: 94.8%</span>
+            </div>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="resume-section-block">
+            <h4 class="resume-section-heading">3. Technical Skills</h4>
+            <p><strong>Languages:</strong> C, C++, Java, Python, HTML5, CSS3, JavaScript</p>
+            <p><strong>Web Technologies:</strong> Semantic HTML, CSS Box Model, Flexbox, CSS Grid, Responsive Design, Canvas API</p>
+            <p><strong>Developer Tools:</strong> Git, GitHub, VS Code, Chrome Developer Tools</p>
+          </div>
+
+          <!-- Projects -->
+          <div class="resume-section-block">
+            <h4 class="resume-section-heading">4. Academic Projects</h4>
+            <div class="resume-item">
+              <div class="resume-item-top">
+                <span class="resume-item-title">MyPortfolio Web Application</span>
+                <span class="resume-item-year">October 2026</span>
+              </div>
+              <p style="font-size: 0.9rem; margin-top: 0.25rem;">
+                Built a multi-section personal portfolio website using pure HTML5 and CSS3. Demonstrates semantic document layout, CSS animations, and accessibility.
+              </p>
+            </div>
+            <div class="resume-item">
+              <div class="resume-item-top">
+                <span class="resume-item-title">Student Grade Portal &amp; Attendance Registry</span>
+                <span class="resume-item-year">September 2026</span>
+              </div>
+              <p style="font-size: 0.9rem; margin-top: 0.25rem;">
+                Created a responsive academic data portal featuring HTML5 tables, custom borders, and mobile-friendly viewports.
+              </p>
+            </div>
+          </div>
+
+          <!-- Achievements -->
+          <div class="resume-section-block">
+            <h4 class="resume-section-heading">5. Honors &amp; Achievements</h4>
+            <ul class="resume-achievements-list">
+              <li>Academic Merit Scholarship recipient for top 5% batch performance.</li>
+              <li>Winner - Department Web Design Sprint (Demonstrated clean semantic HTML and layout speed).</li>
+              <li>Active member of the University Open Source and Web Engineering Club.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: CONTACT (HTML5 Form, Inputs, Labels, Textarea, Form Styling) -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <header class="section-title-wrap">
+          <span class="section-kicker">Get In Touch</span>
+          <h2>Contact Me</h2>
+          <p class="section-subtitle">
+            Demonstrating HTML5 form controls, labels, client-side input validation, and CSS form styling.
+          </p>
+        </header>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <aside class="contact-info-panel">
+            <div class="contact-card">
+              <span class="contact-card-icon">📍</span>
+              <div class="contact-card-text">
+                <h4>Location</h4>
+                <p>SRM University Campus, Chennai, Tamil Nadu, India</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-card-icon">✉️</span>
+              <div class="contact-card-text">
+                <h4>Email Address</h4>
+                <p><a href="mailto:alex.sharma@example.edu">alex.sharma@example.edu</a></p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-card-icon">📱</span>
+              <div class="contact-card-text">
+                <h4>Phone / WhatsApp</h4>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-card-icon">💻</span>
+              <div class="contact-card-text">
+                <h4>Social &amp; Repositories</h4>
+                <p>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/alex-sharma</a>
+                </p>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Contact Form (Unit 1 HTML Form Demonstration) -->
+          <div class="contact-form-box">
+            <!-- Client-side notification alert -->
+            <div id="form-success-alert" class="form-status-alert" role="alert"></div>
+
+            <form id="portfolio-contact-form" action="#" method="post">
+              
+              <!-- Form Control: Name -->
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name <span style="color: #ef4444;">*</span></label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  class="form-input" 
+                  placeholder="e.g. Priya Sundaram" 
+                  required 
+                />
+              </div>
+
+              <!-- Form Control: Email -->
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span style="color: #ef4444;">*</span></label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="e.g. priya@example.com" 
+                  required 
+                />
+              </div>
+
+              <!-- Form Control: Subject -->
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject <span style="color: #ef4444;">*</span></label>
+                <input 
+                  type="text" 
+                  id="subject" 
+                  name="subject" 
+                  class="form-input" 
+                  placeholder="e.g. Internship Inquiry / Lab Feedback" 
+                  required 
+                />
+              </div>
+
+              <!-- Form Control: Message (Textarea) -->
+              <div class="form-group">
+                <label for="message" class="form-label">Your Message <span style="color: #ef4444;">*</span></label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  class="form-textarea" 
+                  rows="5" 
+                  placeholder="Write your message here..." 
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Form Submit Button -->
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                ✉️ Send Message (Demo Submit)
+              </button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: LAB VIVA & SYLLABUS INSPECTOR (Built for College Lab Viva) -->
+    <section id="viva" class="viva-section">
+      <div class="container">
+        <header class="section-title-wrap">
+          <span class="section-kicker">Lab Examiner Reference</span>
+          <h2>Unit 1 Syllabus &amp; Viva Companion</h2>
+          <p class="section-subtitle">
+            Everything an examiner might ask during your Lab Viva, mapped directly to lines of code in this project.
+          </p>
+        </header>
+
+        <!-- Viva Guide Navigation Tabs -->
+        <div class="viva-tabs" role="tablist">
+          <button class="viva-tab-btn active" data-target="tab-mapping" role="tab">
+            📋 Unit 1 Syllabus Mapping
+          </button>
+          <button class="viva-tab-btn" data-target="tab-boxmodel" role="tab">
+            📦 CSS Box Model Explainer
+          </button>
+          <button class="viva-tab-btn" data-target="tab-questions" role="tab">
+            ❓ Viva Questions &amp; Answers (12)
+          </button>
+        </div>
+
+        <!-- TAB 1: SYLLABUS MAPPING TABLE -->
+        <div id="tab-mapping" class="viva-tab-panel active">
+          <div class="table-responsive-wrapper">
+            <table class="education-table">
+              <caption>Unit 1 Syllabus Topics Mapped to Project Code</caption>
+              <thead>
+                <tr>
+                  <th>Syllabus Topic</th>
+                  <th>HTML / CSS Implementation</th>
+                  <th>Location in Project</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>1. HTML Document Structure</strong></td>
+                  <td><code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;html lang="en"&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code></td>
+                  <td>Root document hierarchy in <code>index.html</code></td>
+                </tr>
+                <tr>
+                  <td><strong>2. Headings &amp; Text Blocks</strong></td>
+                  <td><code>&lt;h1&gt;</code> to <code>&lt;h4&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;blockquote&gt;</code></td>
+                  <td>Sections: Home, About, Skills, Education</td>
+                </tr>
+                <tr>
+                  <td><strong>3. Lists (Unordered &amp; Ordered)</strong></td>
+                  <td><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code> with custom CSS styling</td>
+                  <td>Skills Section (Technical Skills &amp; Roadmap)</td>
+                </tr>
+                <tr>
+                  <td><strong>4. Tables</strong></td>
+                  <td><code>&lt;table&gt;</code>, <code>&lt;caption&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code></td>
+                  <td>Education Section &amp; Viva Mapping Table</td>
+                </tr>
+                <tr>
+                  <td><strong>5. Internal &amp; External Links</strong></td>
+                  <td><code>&lt;a href="#about"&gt;</code> (internal) and <code>&lt;a href="https://..." target="_blank"&gt;</code></td>
+                  <td>Sticky Navbar, Hero Buttons, Project Cards</td>
+                </tr>
+                <tr>
+                  <td><strong>6. Images &amp; Multimedia</strong></td>
+                  <td><code>&lt;img src="..." alt="..."&gt;</code> and <code>&lt;audio controls&gt;</code></td>
+                  <td>Hero Profile, Project Cards, About Voice Card</td>
+                </tr>
+                <tr>
+                  <td><strong>7. HTML Forms</strong></td>
+                  <td><code>&lt;form&gt;</code>, <code>&lt;label for="..."&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;button&gt;</code></td>
+                  <td>Contact Section</td>
+                </tr>
+                <tr>
+                  <td><strong>8. CSS Box Model</strong></td>
+                  <td><code>margin</code>, <code>border</code>, <code>padding</code>, <code>content</code>, <code>box-sizing: border-box</code></td>
+                  <td>Global CSS, Cards, Form, Buttons</td>
+                </tr>
+                <tr>
+                  <td><strong>9. Flexbox &amp; CSS Grid</strong></td>
+                  <td><code>display: flex</code>, <code>display: grid</code>, <code>grid-template-columns</code></td>
+                  <td>Navbar, Hero layout, Skills Grid, Projects Grid</td>
+                </tr>
+                <tr>
+                  <td><strong>10. CSS Positioning</strong></td>
+                  <td><code>position: sticky</code>, <code>position: relative</code>, <code>position: absolute</code></td>
+                  <td>Sticky Header, Hero Badges, Underline Indicators</td>
+                </tr>
+                <tr>
+                  <td><strong>11. Transitions &amp; Transformations</strong></td>
+                  <td><code>transition: all 0.3s ease</code>, <code>transform: scale(1.02) translateY(-8px)</code></td>
+                  <td>Project cards hover, Buttons hover, Nav links</td>
+                </tr>
+                <tr>
+                  <td><strong>12. CSS Animation</strong></td>
+                  <td><code>@keyframes heroFadeInUp</code>, <code>animation: heroFadeInUp 0.8s ease-out</code></td>
+                  <td>Hero title &amp; content entrance</td>
+                </tr>
+                <tr>
+                  <td><strong>13. HTML5 Canvas</strong></td>
+                  <td><code>&lt;canvas id="decorative-canvas"&gt;</code> and 2D Context API</td>
+                  <td>Hero Canvas Demonstration Box</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- TAB 2: CSS BOX MODEL VISUALIZER -->
+        <div id="tab-boxmodel" class="viva-tab-panel">
+          <div class="box-model-demo-card">
+            <h3 style="margin-bottom: 1rem;">Visualizing the CSS Box Model</h3>
+            <p style="color: #64748b; max-width: 640px; margin: 0 auto 1.5rem auto;">
+              In CSS, every HTML element is wrapped in a rectangular box containing four nested layers: Margin, Border, Padding, and Content.
+            </p>
+
+            <!-- Nested Box Model Layers -->
+            <div class="box-model-diagram">
+              MARGIN (Outside whitespace, separates elements)
+              <div class="diagram-border">
+                BORDER (Visible perimeter edge)
+                <div class="diagram-padding">
+                  PADDING (Internal breathing space between content &amp; border)
+                  <div class="diagram-content">
+                    CONTENT (Text, Image, or Canvas)
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem; text-align: left; max-width: 700px; margin-left: auto; margin-right: auto;">
+              <h4 style="margin-bottom: 0.5rem;">Key Viva Concept: <code>box-sizing: border-box;</code></h4>
+              <p style="font-size: 0.95rem;">
+                By default, browsers use <code>box-sizing: content-box</code>, where padding and borders add to the element's specified width, often causing layout overflows. In this project, we set <code>* { box-sizing: border-box; }</code>, ensuring that <code>width</code> includes content, padding, and border.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: 12 LAB VIVA QUESTIONS AND ANSWERS -->
+        <div id="tab-questions" class="viva-tab-panel">
+          <div class="viva-qa-list">
+
+            <div class="viva-qa-item">
+              <button class="viva-qa-question">
+                <span>Q1. What is the difference between HTML semantic elements and non-semantic elements?</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="viva-qa-answer">
+                <strong>Answer:</strong> Semantic elements (like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code>) clearly describe their meaning and role to both the browser and developer, enhancing accessibility and SEO. Non-semantic elements (like <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code>) carry no inherent meaning and act solely as generic styling containers.
+              </div>
+            </div>
+
+            <div class="viva-qa-item">
+              <button class="viva-qa-question">
+                <span>Q2. What are the four components of the CSS Box Model?</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="viva-qa-answer">
+                <strong>Answer:</strong> The four components are:
+                <ol style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                  <li><strong>Content:</strong> Where text and media appear.</li>
+                  <li><strong>Padding:</strong> Clear space around content inside the border.</li>
+                  <li><strong>Border:</strong> Line surrounding padding and content.</li>
+                  <li><strong>Margin:</strong> Transparent space outside the border separating neighboring elements.</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="viva-qa-item">
+              <button class="viva-qa-question">
+                <span>Q3. Why is <code>box-sizing: border-box</code> preferred over <code>content-box</code>?</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="viva-qa-answer">
+                <strong>Answer:</strong> With <code>content-box</code> (the default), adding padding or borders expands the element's actual rendered width beyond the declared <code>width</code> property. With <code>border-box</code>, padding and border are included within the specified width, making responsive layout sizing predictable.
+              </div>
+            </div>
+
+            <div class="viva-qa-item">
+              <button class="viva-qa-question">
+                <span>Q4. How does CSS Flexbox differ from CSS Grid?</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="viva-qa-answer">
+                <strong>Answer:</strong> Flexbox is one-dimensional (dealing with either rows OR columns at a time), perfect for navigation bars, button rows, and linear stacks. CSS Grid is two-dimensional (handling both rows AND columns simultaneously), making it ideal for overall page layouts and card grids.
+              </div>
+            </div>
+
+            <div class="viva-qa-item">
+              <button class="viva-qa-question">
+                <span>Q5. What is the difference between relative, absolute, and sticky positioning?</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="viva-qa-answer">
+                <strong>Answer:</strong>
+                <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                  <li><strong>Relative:</strong> Positioned relative to its normal position in document flow.</li>
+                  <li><strong>Absolute:</strong> Removed from normal flow, positioned relative to its nearest positioned ancestor.</li>
+                  <li><strong>Sticky:</strong> Toggles between relative and fixed depending on scroll offset (used for our navigation bar with <code>position: sticky; top: 0;</code>).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="viva-qa-item">
+              <button class="viva-qa-question">
+                <span>Q6. What is the difference between an internal link and an external link in HTML?</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="viva-qa-answer">
+                <strong>Answer:</strong> An internal link uses anchor hash tags (e.g., <code>&lt;a href="#projects"&gt;</code>) to navigate to elements with matching <code>id</code>s within the same page. An external link points to an external URL (e.g., <code>&lt;a href="https://github.com" target="_blank" rel="noopener noreferrer"&gt;</code>).
+              </div>
+            </div>
+
+            <div class="viva-qa-item">
+              <button class="viva-qa-question">
+                <span>Q7. Explain the purpose of <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;th&gt;</code> in HTML tables.</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="viva-qa-answer">
+                <strong>Answer:</strong> <code>&lt;thead&gt;</code> groups header content, <code>&lt;tbody&gt;</code> groups body content, and <code>&lt;th&gt;</code> designates header cells (which are bold and centered by default and read by screen readers as column/row titles via <code>scope="col"</code>).
+              </div>
+            </div>
+
+            <div class="viva-qa-item">
+              <button class="viva-qa-question">
+                <span>Q8. Why should form inputs always have associated <code>&lt;label&gt;</code> elements with <code>for</code> attributes?</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="viva-qa-answer">
+                <strong>Answer:</strong> The <code>for</code> attribute on a <code>&lt;label&gt;</code> matches the <code>id</code> of an <code>&lt;input&gt;</code>. This pairs them for screen reader accessibility and allows users to click the text label to focus the input directly.
+              </div>
+            </div>
+
+            <div class="viva-qa-item">
+              <button class="viva-qa-question">
+                <span>Q9. What is the difference between CSS Transitions and CSS Animations?</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="viva-qa-answer">
+                <strong>Answer:</strong> Transitions require a trigger state change (such as <code>:hover</code> or <code>:focus</code>) to smoothly interpolate between two property values. Keyframe animations (<code>@keyframes</code>) can run automatically on page load without user interaction and can progress through multiple intermediate states (0%, 50%, 100%).
+              </div>
+            </div>
+
+            <div class="viva-qa-item">
+              <button class="viva-qa-question">
+                <span>Q10. How does the HTML5 <code>&lt;canvas&gt;</code> element work?</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="viva-qa-answer">
+                <strong>Answer:</strong> The <code>&lt;canvas&gt;</code> element is an HTML tag that acts as a blank bitmap drawing surface. JavaScript accesses its rendering context using <code>canvas.getContext("2d")</code> to draw paths, shapes, text, and animations in real time using methods like <code>arc()</code>, <code>lineTo()</code>, and <code>clearRect()</code>.
+              </div>
+            </div>
+
+            <div class="viva-qa-item">
+              <button class="viva-qa-question">
+                <span>Q11. What is the purpose of the <code>viewport</code> meta tag?</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="viva-qa-answer">
+                <strong>Answer:</strong> <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> tells mobile browsers to set the width of the page equal to the device screen width, preventing mobile browsers from shrinking desktop layouts into tiny unreadable zooms.
+              </div>
+            </div>
+
+            <div class="viva-qa-item">
+              <button class="viva-qa-question">
+                <span>Q12. How do CSS Media Queries enable responsive web design?</span>
+                <span class="toggle-icon">▼</span>
+              </button>
+              <div class="viva-qa-answer">
+                <strong>Answer:</strong> Media queries (e.g. <code>@media (max-width: 768px) { ... }</code>) allow us to apply specific CSS rules only when the screen size meets specific conditions, such as converting a multi-column flex/grid layout into a single column on mobile devices.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       FOOTER (<footer semantic container)
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <h3>MyPortfolio</h3>
+          <p>
+            Tutorial 1 for Unit 1: HTML &amp; CSS in Cloud Full Stack Web Development. Designed to be clean, modular, and effortless to explain during lab viva examinations.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="color: #ffffff; margin-bottom: 0.75rem;">Navigation Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="color: #ffffff; margin-bottom: 0.75rem;">Project Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#viva">Viva Guide</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alex Sharma. Developed for Unit 1: HTML &amp; CSS Tutorial Lab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript (Minimal for interactivity, mobile menu, and Canvas) -->
+  <script src="./js/script.js"></script>
+</body>
+</html>

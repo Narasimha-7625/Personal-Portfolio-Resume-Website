@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p2-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2b24" />
+      <stop offset="100%" stop-color="#115e59" />
+    </linearGradient>
+    <linearGradient id="p2-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14b8a6" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="360" fill="url(#p2-bg)" />
+  
+  <!-- Browser Frame Mockup -->
+  <g transform="translate(60, 40)">
+    <rect width="480" height="280" rx="10" fill="#0f172a" stroke="#134e4a" stroke-width="2" />
+    <circle cx="20" cy="20" r="5" fill="#ef4444" />
+    <circle cx="36" cy="20" r="5" fill="#f59e0b" />
+    <circle cx="52" cy="20" r="5" fill="#10b981" />
+    <rect x="75" y="12" width="330" height="16" rx="4" fill="#1e293b" />
+    <text x="90" y="24" fill="#94a3b8" font-family="sans-serif" font-size="10">https://student-grades.portal/attendance</text>
+    
+    <!-- Table Mockup -->
+    <rect x="25" y="48" width="430" height="210" rx="6" fill="#132e2a" />
+    <!-- Table Header -->
+    <rect x="40" y="65" width="400" height="30" rx="4" fill="#0f766e" />
+    <rect x="55" y="76" width="60" height="8" rx="2" fill="#ffffff" />
+    <rect x="155" y="76" width="70" height="8" rx="2" fill="#ffffff" />
+    <rect x="265" y="76" width="60" height="8" rx="2" fill="#ffffff" />
+    <rect x="365" y="76" width="50" height="8" rx="2" fill="#ffffff" />
+    
+    <!-- Row 1 -->
+    <rect x="40" y="105" width="400" height="26" fill="#113e38" />
+    <rect x="55" y="114" width="70" height="7" rx="2" fill="#a7f3d0" />
+    <rect x="155" y="114" width="80" height="7" rx="2" fill="#e2e8f0" />
+    <rect x="265" y="114" width="45" height="7" rx="2" fill="#34d399" />
+    <rect x="365" y="114" width="40" height="12" rx="3" fill="#059669" />
+
+    <!-- Row 2 -->
+    <rect x="40" y="138" width="400" height="26" fill="#0d312c" />
+    <rect x="55" y="147" width="65" height="7" rx="2" fill="#a7f3d0" />
+    <rect x="155" y="147" width="90" height="7" rx="2" fill="#e2e8f0" />
+    <rect x="265" y="147" width="40" height="7" rx="2" fill="#34d399" />
+    <rect x="365" y="147" width="40" height="12" rx="3" fill="#059669" />
+
+    <!-- Row 3 -->
+    <rect x="40" y="171" width="400" height="26" fill="#113e38" />
+    <rect x="55" y="180" width="80" height="7" rx="2" fill="#a7f3d0" />
+    <rect x="155" y="180" width="75" height="7" rx="2" fill="#e2e8f0" />
+    <rect x="265" y="180" width="48" height="7" rx="2" fill="#34d399" />
+    <rect x="365" y="180" width="40" height="12" rx="3" fill="#059669" />
+
+    <!-- Summary Badges -->
+    <rect x="40" y="212" width="110" height="28" rx="4" fill="#042f2e" stroke="#14b8a6" stroke-width="1" />
+    <text x="52" y="230" fill="#5eead4" font-family="sans-serif" font-size="11">Total: 48 Students</text>
+
+    <rect x="165" y="212" width="110" height="28" rx="4" fill="#042f2e" stroke="#14b8a6" stroke-width="1" />
+    <text x="175" y="230" fill="#5eead4" font-family="sans-serif" font-size="11">Avg CGPA: 8.92</text>
+  </g>
+</svg>
