@@ -1,6 +1,12 @@
 # MyPortfolio – Personal Portfolio & Resume Website
 **Course:** Cloud Full Stack Web Development  
 **Tutorial:** Tutorial 1 for Unit 1: HTML & CSS  
+**Student Name:** K NARASIMHA SANNIHITH  
+**Institution:** SRM Institute of Science and Technology (2024 – 2028), 3rd Year  
+**Email:** narasimhasannihith@gmail.com  
+**Mobile:** +91 6302977625  
+**GitHub:** [github.com/Narasimha-7625](https://github.com/Narasimha-7625)  
+**LeetCode:** [leetcode.com/u/sannihith_k](https://leetcode.com/u/sannihith_k/)  
 **Target Audience:** Students, Lab Instructors, and Lab Viva Examiners
 
 ---
